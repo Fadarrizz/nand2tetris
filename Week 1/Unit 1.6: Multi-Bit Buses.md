@@ -6,7 +6,7 @@ such a group of bits as a single entity.
 
 In HDLs there are convenient notations for handling these buses:
 
-<img src="https://github.com/Fadarrizz/nand2tetris/blob/master/Week%201/Screenshot%202020-04-20%20at%2019.34.10.png" width="350">
+<img src="https://github.com/Fadarrizz/nand2tetris/blob/master/screenshots/16-bit%20adder.png" width="350" alt="16-bit adder">
 
 ```HDL
 /*
