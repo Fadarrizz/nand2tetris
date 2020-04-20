@@ -63,3 +63,8 @@ CHIP AndMuxOr {
 - Enables transmitting multiple messages on a single, shared communications line
 - A common use of multiplexing/demultiplexing logic
 
+## Best practice advice
+- Try to implement the chips in the given order
+- If you don;t implement some chips, you can still use them as chip-parts in other chips (use built-in implementations)
+- You can invent new, helper chips; however, this is not required, you can build any chip using previously-built chips only
+- Strive to use as few chip-parts as possible.
