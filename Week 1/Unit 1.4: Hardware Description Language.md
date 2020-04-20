@@ -24,4 +24,4 @@ Let's say the input is A. If we connect a NOT operator to A and AND operator to 
 
 Finally, we can write up the parts in our interface in HDL:
 
-<img src="https://github.com/Fadarrizz/nand2tetris/blob/master/Week%201/Screenshot%202020-04-18%20at%2011.48.48.png" width="500">
+<img src="https://github.com/Fadarrizz/nand2tetris/blob/master/screenshots/XOR%20gate.png" width="500" alt="XOR gate">
