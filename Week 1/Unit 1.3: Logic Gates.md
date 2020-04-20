@@ -9,7 +9,7 @@ A Composite Logic Gate is made up of more than one functionality and is therefor
 
 ## Elementary logic gates: NAND
 
-<img src="https://www.computerscience.gcse.guru/wp-content/uploads/2016/11/NAND.png" width="200">
+<img src="https://www.computerscience.gcse.guru/wp-content/uploads/2016/11/NAND.png" width="200" alt="nand gate">
 
 An Gate Interface is the abstraction of the implementation. It answers the question 'what'.
 There is only one interface to describe the functionality of a gate. But there can be many 
