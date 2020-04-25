@@ -13,5 +13,9 @@ CHIP HalfAdder {
         carry;  // Left bit of a + b
 
     PARTS:
-    // Put you code here:
+    // When looking at the truth table, we can see that Sum is equal to a Xor gate, and Carry to an And gate.
+    // Sum is achievable by using a Xor gate, since we only want to output 1 when we have a 1 from either a or b, not both.
+    // When we do get a 1 from both a and b, we want Carry to output a one. Thus, an And gate applies in this case.
+    And(a=a, b=b, out=carry);
+    Xor(a=a, b=b, out=sum);
 }
