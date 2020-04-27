@@ -13,15 +13,7 @@ CHIP FullAdder {
         carry;   // Left bit of a + b + c
 
     PARTS:
-    // If a=0, the outcome is the same as an Half-Adder.
-    HalfAdder(a=b, b=c, carry=c1, sum=s1);
-
-    // if a=1, the truth table shows an Or for Carry, and a Nor for Sum.
-    // Sum is the exact opposite of Carry in this case. So, we can use a Not gate for this.
-    Or(a=b, b=c, out=c2);
-    Not(in=c2, out=s2);
-
-    // Finally, we want to check if a is 0 or 1. If 0, output the Half-Adder. Else, output the Or-Nor combination.
-    Mux(a=c1, b=c2, sel=a, out=carry);
-    Mux(a=s1, b=s2, sel=a, out=sum);
+    HalfAdder(a=b, b=c, sum=s1, carry=c1);
+    HalfAdder(a=s1, b=a, sum=sum, carry=c2);
+    Xor(a=c1, b=c2, out=carry);
 }
