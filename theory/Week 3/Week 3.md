@@ -13,7 +13,7 @@ This behavior forms the basis of all the hardware devices that computers use to 
 ## Registers
 A Register is a storage device that can store or remember a value over time, implementing storage behaviour `out(t) = out(t - 1)`. A DFF can only output its previous input. This suggests that a register can be implemented from a DFF by simply feeding the output of the latter back into its input.
 
-<img src="" width="800" alt="From a DFF to a single-bit register">
+<img src="https://github.com/Fadarrizz/nand2tetris/blob/master/theory/screenshots/DFF%20to%20register.png" width="750" alt="From a DFF to a single-bit register">
 
 The above image shows an invalid design of a register. It is not clear how new data is loaded into the device, since there is no way to tell when the input is drawn from the in-wire and when from the out-wire. The rules of chip design dictate that internal pins must have a fan-in of 1, meaning from a single source only.
 
@@ -24,9 +24,9 @@ This mechanism for remembering a single bit can be easily scaled to construct wi
 ## Memories
 Once we have the ability to represent words, we can build memory banks of all sizes. 
 
-<img src="" width="800" alt="From single-bit to multi-bit registers">
+<img src="https://github.com/Fadarrizz/nand2tetris/blob/master/theory/screenshots/Single-bit%20to%20multi-bit%20registers.png" width="600" alt="From single-bit to multi-bit registers">
 
-<img src="" width="800" alt="RAM chip">
+<img src="https://github.com/Fadarrizz/nand2tetris/blob/master/theory/screenshots/RAM%20chip.png" width="550" alt="RAM chip">
 
 ## Counters
 
